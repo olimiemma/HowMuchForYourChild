@@ -1,0 +1,10 @@
+import pandas as pd
+
+# Read the data from a CSV file
+df = pd.read_csv("data.csv")
+
+# Calculate the average cost of raising a child
+average_cost = df["cost"].mean()
+
+# Print the average cost
+print(average_cost)
