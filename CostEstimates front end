@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Child Cost Estimator</title>
+
+</head>
+
+<body>
+
+<h1>Child Cost Estimator</h1>
+
+<form action="/estimate" method="post">
+
+<input type="text" name="location" placeholder="Location">
+
+<input type="text" name="income" placeholder="Income">
+
+<input type="text" name="family_size" placeholder="Family Size">
+
+<input type="submit" value="Estimate">
+
+</form>
+
+<h2>Cost Estimates</h2>
+
+<ul>
+
+{% for cost_estimate in cost_estimates %}
+
+<li>{{ cost_estimate.category }}: {{ cost_estimate.amount }}</li>
+
+{% endfor %}
+
+</ul>
+
+</body>
+
+</html>
+
