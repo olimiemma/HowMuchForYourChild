@@ -1,0 +1,26 @@
+from flask import Flask, request
+
+app = Flask(__name__)
+
+@app.route("/estimate")
+
+def estimate():
+
+  location = request.args.get("location")
+
+  income = request.args.get("income")
+
+  family_size = request.args.get("family_size")
+
+  # Get the cost estimates from the database
+
+  cost_estimates = get_cost_estimates(location, income, family_size)
+
+  # Return the cost estimates to the user
+
+  return jsonify(cost_estimates)
+
+if __name__ == "__main__":
+
+  app.run()
+
