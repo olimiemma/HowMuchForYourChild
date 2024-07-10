@@ -1,3 +1,6 @@
+![image](https://github.com/olimiemma/HowMuchForYourChild/assets/98601170/9276fb8e-bb99-49ae-b722-579194e504af)
+
+
 <b> Child Cost Estimator</b>
 
 The Child Cost Estimator is an app or website designed to help individuals and couples estimate the expenses associated with having and raising a child. By providing users with tailored cost estimates based on their location, income, and family composition, the Child Cost Estimator aims to offer valuable insights into the financial implications of starting a family.
